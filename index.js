@@ -35,6 +35,14 @@ app.get("/", (req, res) => {
 //API routes
 app.use('/api', apiRouter);
 
+//Global error handling
+app.use((err,req, res, next) => {
+    console.log(err);
+    res.status(500).json({
+        error: 'something broke'
+    });
+});
+
 //start server
 app.listen(port, err => {
     if (err) {
