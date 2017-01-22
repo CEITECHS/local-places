@@ -4,6 +4,7 @@
   "description": "local places",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/CEITECHS/local-places#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "forerunnerdb": "^1.4.37",
     "morgan": "^1.7.0",
