@@ -1,5 +1,5 @@
 "use strict"
-// app/indes.js
+// app/index.js
 const express = require('express');
 const apiRouter = express.Router();
 
