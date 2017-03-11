@@ -1,6 +1,6 @@
 "use strict"
 const assert = require('assert');
-const readFiles = require('../app/readFiles');
+const readFiles = require('../lib/readFiles');
 
 describe('ReadFile from Local', () => {
     describe('#readJson()', () => {
