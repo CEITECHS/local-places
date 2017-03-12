@@ -28,7 +28,7 @@ describe('ReadFile from Remote', () => {
                 else {
                    let addresses = data.map(elem => new Address(elem[config.addressId],
                        elem[config.street], elem[config.longitude], elem[config.latitude],
-                       elem[config.county],elem[config.city], elem[config.postalcode], elem[config.region], elem[config.timezone],
+                       elem[config.county],elem[config.city], elem[config.postcode], elem[config.region], elem[config.timezone],
                        elem[config.country]
                        )
                    );

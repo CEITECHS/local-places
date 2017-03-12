@@ -7,25 +7,12 @@
         this._latitude = latitude;
         this._county = county;
         this._city = city;
-        this._postalcode = postalcode;
+        this._postcode = postalcode;
         this._region = region;
         this._timezone = timezone;
         this._country = country;
 
     }
-
-    // constructor(options){
-    //     this._referenceId = options._referenceId;
-    //     this._street = options._street;
-    //     this._longitude = options._longitude;
-    //     this._latitude = options._latitude;
-    //     this._county = options._county;
-    //     this._city = options._city;
-    //     this._postalcode = options._postalcode;
-    //     this._region = options._region;
-    //     this._timezone = options._timezone;
-    //     this._country = options._country;
-    // }
 
      get referenceId() {
          return this._referenceId;
@@ -76,11 +63,11 @@
      }
 
      get postalcode() {
-         return this._postalcode;
+         return this._postcode;
      }
 
      set postalcode(value) {
-         this._postalcode = value;
+         this._postcode = value;
      }
 
      get region() {

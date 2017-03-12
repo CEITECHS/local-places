@@ -8,7 +8,7 @@ module.exports = {
     'longitude':'longitude',
     'county':'region3',
     'city': 'region2',
-    'postalcode': 'postcode',
+    "postcode": 'postcode',
     'region': 'region1',
     'country': 'country',
     'timezone':'timezone',
