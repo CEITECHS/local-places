@@ -98,7 +98,7 @@ describe('find all streets in a county  by country and region  and city saved in
             placesRepo.findAllStreets('Tanzania', 'Arusha', 'Arumeru', 'Kikwe', (err, result) => {
                 if (err) done(err);
                 else {
-                    // console.log(result);
+                   // console.log(result);
                     assert(result.length > 0, 'length should be greater than zeno');
                     done();
                 }
@@ -110,10 +110,10 @@ describe('find all streets in a county  by country and region  and city saved in
 describe('find all streets in a country starting with keyword saved in db', () => {
     describe('#findAllStreetsStartingWith()', () => {
         it('should return some items without throwing any error', (done) => {
-            placesRepo.findAllStreetStartingWith('Tanzania', 'a', (err, result) => {
+            placesRepo.findAllStreetStartingWith('Tanzania', 'ng', (err, result) => {
                 if (err) done(err);
                 else {
-                   // console.log(result);
+                   console.log(result);
                     assert(result.length > 0, 'length should be greater than zeno');
                     done();
                 }
