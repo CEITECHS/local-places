@@ -28,12 +28,12 @@ var port = process.env.PORT || 3000;
 //basic routes
 app.get("/", (req, res) => {
     res.json({
-        message: `Hello! The API is at http://localhost:${port}/api`
+        message: `Hello! The API is at http://localhost:${port}/apis/v1`
     });
 });
 
 //API routes
-app.use('/api', apiRouter);
+app.use('/apis/v1', apiRouter);
 
 //Global error handling
 app.use((err,req, res, next) => {
