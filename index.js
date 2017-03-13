@@ -11,7 +11,7 @@ const express = require('express') ;
 const morgan = require('morgan');
 const cors = require('cors');
 
-var app = express();
+const app = express();
 
 app.use(cors()); // enable cors for everything
 
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 // configurations
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 //basic routes
 app.get("/", (req, res) => {
@@ -50,3 +50,7 @@ app.listen(port, err => {
     }
     console.log('Magic happens at http://localhost:' + port);
 });
+
+//TODO : Set up scripts to load data, do it on starting of the server or use set-up end-point
+//TODO:  Errors handling
+//TODO : Hooking up service layer to serve end-point requests
