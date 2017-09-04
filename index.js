@@ -39,7 +39,8 @@ app.use('/apis/v1', apiRouter);
 app.use((err,req, res, next) => {
     console.log(err);
     res.status(500).json({
-        error: 'something broke'
+        message: "Ops something is broke !!! ",
+        error: err.message
     });
 });
 
@@ -51,6 +52,5 @@ app.listen(port, err => {
     console.log('Magic happens at http://localhost:' + port);
 });
 
-//TODO : Set up scripts to load data, do it on starting of the server or use set-up end-point
-//TODO:  Errors handling
-//TODO : Hooking up service layer to serve end-point requests
+//TODO docker deployment container to deploy service.
+

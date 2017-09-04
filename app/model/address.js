@@ -1,4 +1,8 @@
 "use strict"
+/**
+ * @author Iddy Magohe 2017
+ */
+
  class Address {
     constructor(id, street, longitude, latitude, county, city,  postalcode, region, timezone, country){
         this._referenceId = id;

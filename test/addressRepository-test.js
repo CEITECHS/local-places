@@ -1,4 +1,9 @@
 "use strict"
+
+/**
+ * @author Iddy Magohe 2017
+ */
+
 const assert = require('assert');
 const readFiles = require('../lib/readFiles');
 const Address = require('../app/model/address')
@@ -21,7 +26,7 @@ describe('Read file from Remote and save contents to db', () => {
                     placesRepo.setupWithAddresses(JSON.parse(JSON.stringify(addresses)), (err, result) => {
                         if (err) done(err)
                         else {
-                            assert.equal(result.failed.length, 0, "all records should've  been  save successfully");
+                            assert.equal(result.failed.length, 0, "all records should've  been  saved successfully");
                             assert.equal(result.inserted.length, 100, "all 100 records should've  been  save successfully");
                             done();
                         }

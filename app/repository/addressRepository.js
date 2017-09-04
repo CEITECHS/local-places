@@ -1,4 +1,7 @@
 "use strict"
+/**
+ * @author Iddy Magohe 2017
+ */
 
 const config = require('../../config')
 const ForerunnerDB = require("forerunnerdb");

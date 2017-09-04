@@ -1,4 +1,9 @@
 "use strict"
+
+/**
+ * @author Iddy Magohe 2017
+ */
+
 const assert = require('assert');
 const readFiles = require('../lib/readFiles');
 const Address = require('../app/model/address')
